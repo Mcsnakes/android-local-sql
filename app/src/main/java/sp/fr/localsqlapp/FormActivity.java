@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import fr.sp.database.DatabaseHandler;
+
 public class FormActivity extends AppCompatActivity {
 
     private TextView textViewNom;
@@ -43,6 +45,7 @@ public class FormActivity extends AppCompatActivity {
     public void onValide(View v) {
 
         Button buttonValider = (Button) v;
+        DatabaseHandler db = new DatabaseHandler(this);
 
     }
 }
